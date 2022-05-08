@@ -52,10 +52,10 @@ class DataFrame:
         return 0
 
 #An example to be sorted using the rules we put
-data = [DataFrame("Karim", "01173091969", 4),
-        DataFrame("Nabil", "01273091968", 1),
-        DataFrame("Atiaa", "01178031367", 3),
-        DataFrame("Karim", "01273091969", 2)]
+data = [DataFrame("Karim", "01100000000", 4),
+        DataFrame("Nabil", "01273000000", 1),
+        DataFrame("Atiaa", "01178000000", 3),
+        DataFrame("Karim", "01273000000", 2)]
 
 Selection = SelectionSort()
 print(Selection.is_sorted(data))
