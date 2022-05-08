@@ -63,6 +63,7 @@ def main():
     #     print(_.name, _.phone, _.id)
     # print(Insertion.is_sorted(data))
 
+#To calculate execution time to compare with other sortion methods
 import time
 start_time = time.time()
 main()
