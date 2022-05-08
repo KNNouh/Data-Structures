@@ -4,10 +4,13 @@ class ShellSort:
     def sort(self, listOfItems):
         length = len(listOfItems)
         h = 1
+        #As a modification in Insertion Sort we don't go step by step backward but we take h step
         while h < length//3: h = 3 * h + 1
+            
         while h >= 1:
             for i in range(h, length):
                 for j in range(i, 0, -h):
+                    #Make sure that your are not out of array stack
                     if j >= h and self.less(listOfItems[j], listOfItems[j-h]):
                         self.exchange(listOfItems, j, j-h)
                     else:
@@ -69,4 +72,4 @@ def main(n):
 import time
 start_time = time.time()
 main(100)
-print(f"Insertion Sort took\n--- {(time.time() - start_time)} seconds ---" )
+print(f"Shell Sort took\n--- {(time.time() - start_time)} seconds ---" )
