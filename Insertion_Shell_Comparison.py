@@ -123,7 +123,7 @@ x = [4*i for i in x1]
 
 plt.xlabel('Number Of Items')
 plt.ylabel('Execution Time (Milliseconds)')
-plt.title('Shell Sort')
+plt.title('Shell Sort VS Insertion Sort')
 plt.plot(x, insertion_y, label = 'Inserstion Sort')
 plt.plot(x, shell_y, label = 'Shell Sort')
 plt.show()
